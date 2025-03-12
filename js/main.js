@@ -22,8 +22,11 @@
 // console.log (" ${email} ${login} ${password} ");
 
 // 3.3
-const num = 10369;
-const str = String(num);
-const rslt = str.split('').join(" ");
+// const num = 10369;
+// const str = String(num);
+// const rslt = str.split('').join(" ");
+// console.log(rslt);
 
-console.log(rslt);
+// 4.1
+const yourName = prompt ("What is your name?");
+alert ( "Hello, " + yourName + "! " + "How are you?");
