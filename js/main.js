@@ -107,20 +107,25 @@
 // userSport();
 
 // 4.4
-let numOrStr = prompt('input number or string');
-console.log(numOrStr);
+// let numOrStr = prompt('input number or string');
+// console.log(numOrStr);
 
-switch (true) {
-	case numOrStr === null:
-		console.log('ви скасували')
-	break;
-	case numOrStr.trim() === '':
-		console.log('Empty String');
-	break;
-	case isNaN(+numOrStr):
-		console.log(' number is Ba_NaN')
-	break;
-	default:
-		console.log('OK!')
-	break;
+// switch (true) {
+// 	case numOrStr === null:
+// 		console.log('ви скасували')
+// 	break;
+// 	case numOrStr.trim() === '':
+// 		console.log('Empty String');
+// 	break;
+// 	case isNaN(+numOrStr):
+// 		console.log(' number is Ba_NaN')
+// 	break;
+// 	default:
+// 		console.log('OK!')
+// 	break;
+// }
+
+// 5.1
+for (let i = 20; i <=30; i += 0.5) {
+	console.log(i);
 }
