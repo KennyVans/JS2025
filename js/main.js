@@ -49,59 +49,78 @@
 
 // 4.3 
 // год рождения
-function userAge() {
-    const yourBD = prompt ("Ваш год рождения?");
-    const thisYear = new Date().getFullYear();
-    if(yourBD) {
-        const yourAge = thisYear - Number(yourBD);
-        alert(`Вам ${yourAge} лет`);
-    }
-    else {
-        alert("Жаль,  что Вы не захотели ввести Ваш год рождения!"); 
-    }
+// function userAge() {
+//     const yourBD = prompt ("Ваш год рождения?");
+//     const thisYear = new Date().getFullYear();
+//     if(yourBD) {
+//         const yourAge = thisYear - Number(yourBD);
+//         alert(`Вам ${yourAge} лет`);
+//     }
+//     else {
+//         alert("Жаль,  что Вы не захотели ввести Ваш год рождения!"); 
+//     }
+// }
+// userAge();
+// // город
+// function userCity() {
+//     const yourCity = prompt ("Ваш город проживания?");
+//     if(yourCity) {  
+//         if (yourCity === "Киев" || yourCity === "Київ" || yourCity === "Kyiv") {
+//             alert(`Вы живете в столице Украины!`);
+//         } 
+//         else if (yourCity === "Лондон") {
+//             alert("Ты живешь в столице Великобритании!");
+//         }
+//         else if (yourCity === "Вашингтон") {
+//             alert("Ты живеш в столице США!");
+//         }
+//         else {
+//             alert(`${yourCity} - Ваш город!`); 
+//         } 
+//     }
+//     else {
+//         alert("Жаль, что Вы не захотели ввести Ваш город!"); 
+//     } 
+// }
+// userCity(); 
+// // спорт
+// function userSport(){
+//     const yourSport = prompt ("Твой любимый вид спорта?");
+//     if(yourSport) {
+//         if (yourSport === "Бокс") {
+//             alert("Круто! Хочешь быть как Виталий Кличко?");
+//         }
+//         else if(yourSport === "Хоккей") {
+//             alert("Круто! Хочешь быть как Уейн Гретцки?");
+//         }
+//         else if(yourSport === "Баскетбол") {
+//             alert("Круто! Хочешь быть как Джеймс Леброн?");
+//         }
+//         else {
+//             alert(`${yourSport} - твой любимый вид спорта!`); 
+//         } 
+//     }
+//     else{
+//         alert("Жаль, что Вы не захотели ввести Ваш любимый вид спорта!");
+//     }
+// }
+// userSport();
+
+// 4.4
+let numOrStr = prompt('input number or string');
+console.log(numOrStr);
+
+switch (true) {
+	case numOrStr === null:
+		console.log('ви скасували')
+	break;
+	case numOrStr.trim() === '':
+		console.log('Empty String');
+	break;
+	case isNaN(+numOrStr):
+		console.log(' number is Ba_NaN')
+	break;
+	default:
+		console.log('OK!')
+	break;
 }
-userAge();
-// город
-function userCity() {
-    const yourCity = prompt ("Ваш город проживания?");
-    if(yourCity) {  
-        if (yourCity === "Киев" || yourCity === "Київ" || yourCity === "Kyiv") {
-            alert(`Вы живете в столице Украины!`);
-        } 
-        else if (yourCity === "Лондон") {
-            alert("Ты живешь в столице Великобритании!");
-        }
-        else if (yourCity === "Вашингтон") {
-            alert("Ты живеш в столице США!");
-        }
-        else {
-            alert(`${yourCity} - Ваш город!`); 
-        } 
-    }
-    else {
-        alert("Жаль, что Вы не захотели ввести Ваш город!"); 
-    } 
-}
-userCity(); 
-// спорт
-function userSport(){
-    const yourSport = prompt ("Твой любимый вид спорта?");
-    if(yourSport) {
-        if (yourSport === "Бокс") {
-            alert("Круто! Хочешь быть как Виталий Кличко?");
-        }
-        else if(yourSport === "Хоккей") {
-            alert("Круто! Хочешь быть как Уейн Гретцки?");
-        }
-        else if(yourSport === "Баскетбол") {
-            alert("Круто! Хочешь быть как Джеймс Леброн?");
-        }
-        else {
-            alert(`${yourSport} - твой любимый вид спорта!`); 
-        } 
-    }
-    else{
-        alert("Жаль, что Вы не захотели ввести Ваш любимый вид спорта!");
-    }
-}
-userSport();
