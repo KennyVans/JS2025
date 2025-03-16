@@ -131,7 +131,13 @@
 // }
 
 // 5.2
-const exchange = 26;
-for (let i =10;  i <= 100; i +=10) {
-    console.log(`${i} usd = ${i * exchange} uah`);
-}
+// const exchange = 26;
+// for (let i =10;  i <= 100; i +=10) {
+//     console.log(`${i} usd = ${i * exchange} uah`);
+// }
+
+// 5.3
+let N = prompt ("Введите целое число от 1 до 100!");
+N = Number (N);
+for (let i = 1; i * i <= N; i++)
+console.log(i);
