@@ -137,20 +137,21 @@
 // }
 
 // 5.3
-// let N = prompt ("Введите целое число от 1 до 100!");
-// N = Number (N);
-// for (let i = 1; i * i <= N; i++)
-// console.log(i);
+let N = prompt ("Введите целое число от 1 до 100!");
+N = Number (N);
+for (let i = 1; i * i <= N; i++)
+console.log(i);
 
 // 5.4
-let N = prompt("Введите целое число от 1 до 100!");
-N = Number(N);
-let i = 2;
-while (i < N) {
-if (N % i === 0) {
-    alert("Число не простое");
-    break;
-}
-    i++;
-}
-if (i === N) alert("Число простое");
+// let N = prompt("Введите целое число от 1 до 100!");
+// N = Number(N);
+// let i = 2;
+// while (i < N) {
+// if (N % i === 0) {
+//     alert("Число не простое");
+
+//     break;
+// }
+//     i++;
+// }
+// if (i === N) alert("Число простое");
