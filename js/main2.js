@@ -21,4 +21,4 @@ function averageNumbers(arr) {
     if (numbers.length === 0) return null;
     return numbers.reduce((a, b) => a + b, 0) / numbers.length;
 }
-console.log(averageNumbers ([10, 'dog', true, 20, null, 30, 'cat', 40]) );
+console.log(averageNumbers ([10, 'dog', true, 20, null, 30, 'cat', 40]) ); 
